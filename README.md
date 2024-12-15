@@ -61,6 +61,7 @@ The table below shows the attributes used for this project:
 Customers with **successful previous campaign outcome** and customers with **500-1000s last contact duration** are two customer segments which are more likely to respond positively to the telecommunication campaign. Customers in the 45-69 age group are also highly responsive. 
 
 3. Can statistical learning models accurately predict the success of a marketing campaign?
+The results turn out relatively good when 3 models have the accuracy of over 90%. Here are the results:
 
 | Models                        | Accuracy Score | Average Accuracy (Cross-Validation) |
 |-------------------------------|----------------|--------------------------------------|
@@ -71,8 +72,6 @@ Customers with **successful previous campaign outcome** and customers with **500
 
 
 
-### Model Prediction Results
-
 |                                 | **Meaning**                                                                 | **Logistic Regression** | **SVC** |
 |-------------------------------------------|-------------------------------------------------------------------------------|--------------------------|---------|
 | **True Positives**                         | Customers correctly predicted as potential customers and subscribed to the term deposit. | 10144                    | 10157   |
@@ -82,12 +81,29 @@ Customers with **successful previous campaign outcome** and customers with **500
 | **Total Correct Predictions**             |                                                                               | **10466**               | **10427** |
 | **Total Incorrect Predictions**           |                                                                               | **1030**                | **1069**  |
 
+
+- False Positives represent a wasteful cost on customers who did not subscribe to the term deposit. Therefore, it is necessary to analyse the characteristics of customers in this group to understand why they were misclassified, before implementing some strategies to minimize False Positives to reduce marketing costs. One strategy could be adjusting the campaign’s targeting to avoid customers who are potentially non-respondents.
+- False Negatives represent customers were missed because the model failed to identify those who were interested in the campaign. This means the telecommunication company missed opportunity to attract potential customers, and increase revenue. Strategy could be refining models to make it more accurate, adopting appropriate strategies to focus on this group to capture more of these potential customers.
+
+
 This is AUC ROC Curve of Logistic Regression model
 ![auc_roc_curve](auc_roc_curve.png)
 
-5. How can the telecommunication company implement effective business strategies based on findings to maximize the marketing campaign success and overall business growth?
+3. How can the telecommunication company implement effective business strategies based on findings to maximize the marketing campaign success and overall business growth?
+The company should specifically adopt marketing strategies for each customer segments, focus on most responsive groups to maximize the success of marketing campaign.
+•	Regarding customers who subscribed to a term deposit in the past, the company should provide exclusive discounts, offerings, and rewards.
+•	Regarding customers who show their interests in subscribing by spending their time on phone calls, it is a great chance to provide in-depth information about offerings, send personalized follow-up messages or emails, tailor message to their specific needs, and collect feedback directly from these customers.
+•	In terms of the most responsive age group to the campaign, the company should implement appropriate strategies to encourage them and retain them as loyal customers.
 
-
+## ** References**
+Abu-Srhan, A., Alhammad, B., Al, S., & Al-Sayyed, R. (2019). Visualization and Analysis in Bank Direct Marketing Prediction. International Journal of Advanced Computer Science & Applications, 10(7). https://doi.org/10.14569/IJACSA.2019.0100785
+Hossam, M., Predicting Loan Approval of Bank Direct Marketing Data Using Ensemble Machine Learning Algorithms. International Journal of Circuits, Systems and Signal Processing, vol. 14. https://doi.org/10.46300/9106.2020.14.117
+Jiong, C., Yucen, H., Zhao, H., Yicheng, L. & Mengni, S. (2014). Who Will Subscribe A Term Deposit? Colombia University. http://www.columbia.edu/~jc4133/ADA- Project.pdf
+Maia (2023, April 28). Customer Segmentation And Prediction For Marketing Campaigns. Medium. https://blog.startupstash.com/customer-segmentation- and-prediction-for-marketing-campaigns-3486f8dc2627
+Moro, S., Cortez, P., & Rita, P. (2014). A data-driven approach to predict the success of bank telemarketing. Decision Support Systems, 62, 22-31. https://doi.org/10.1016/j.dss.2014.03.001
+Olson, D. L., & Chae, B. (2012). Direct marketing decision support through predictive customer response modelling. Decision Support Systems, 54(1), 443- 451. https://doi.org/10.1016/j.dss.2012.06.005
+Olson, D.L., Cao, Q., Gu, C. et al. Comparison of customer response models. Serv Bus 3, 117–130 (2009). https://doi.org/10.1007/s11628-009-0064-8
+Raitaluoto, T. (2023, May 11). Segmenting customers based on their loyalty: pros and cons. markettailor. https://www.markettailor.io/blog/segmenting- customers-based-on-their-loyalty-pros-and-cons
 
 
 
