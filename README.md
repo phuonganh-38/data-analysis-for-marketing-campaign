@@ -16,13 +16,9 @@ Research questions:
   2.	Can statistical learning models accurately predict the success of a marketing campaign?
   3.	How can the telecommunication company implement effective business strategies based on findings to maximize the marketing campaign success and overall business growth?
 
-Main obejectives:
-  1.	Pre-process the given dataset
-  2.	Develop and evaluate parametric and non-parametric machine learning models
-  3.	Extract insights to assist the company in making decisions
 
 
-### **Dataset***
+### **Dataset**
 The [telemarketing campaign dataset](telecom_data.csv) contains a total of 22 variables. However, this project will take only 9 attributes into consideration.
 - `age` is divided into 4 age groups, including Teen, Early Adulthood, Early Middle Age, and Late Middle Age.
 - `duration` is divided into 4 groups: under 200s, 200-500s, 500-1000, and over 1000s.
@@ -42,7 +38,12 @@ The table below shows the attributes used for this project:
 | Poutcome    | Categorical  | Outcome of the previous marketing campaign | Yes/No                                           |
 | y           | Categorical  | Has the client subscribed a term deposit?  | Yes/No                                           |
 
+
+
 ### **Usage**
+1. Upload the [dataset](telecom_data.csv) and [notebook](eda_and_models.ipynb) to your Google Drive.
+2. Adjust file paths in the notebook file before running.
+
 
 ### **Models used**
 - Logistic Regression
@@ -50,10 +51,13 @@ The table below shows the attributes used for this project:
 - KNN
 - Support Vector Machince
 
+
+
 ### **Features**
 - Conduct hyperparameter optimization by employing GridSearchCV to optimize the performance of Logistics Regression.
 - Apply Cross Validation to help reduce overfitting and maximize data utilization.
 - Confusion Matrix
+
 
 
 ### **Results**
@@ -74,6 +78,7 @@ The results turn out relatively good when 3 models have the accuracy of over 90%
 | Support Vector Machine (SVC)  | 0.91           | -                            |
 
 
+Here is Confusion Matrix comparison table:
 
 |                                 | **Meaning**                                                                 | **Logistic Regression** | **SVC** |
 |-------------------------------------------|-------------------------------------------------------------------------------|--------------------------|---------|
@@ -86,12 +91,14 @@ The results turn out relatively good when 3 models have the accuracy of over 90%
 
 
 - False Positives represent a wasteful cost on customers who did not subscribe to the term deposit. Therefore, it is necessary to analyse the characteristics of customers in this group to understand why they were misclassified, before implementing some strategies to minimize False Positives to reduce marketing costs. One strategy could be adjusting the campaign’s targeting to avoid customers who are potentially non-respondents.
+  
 - False Negatives represent customers were missed because the model failed to identify those who were interested in the campaign. This means the telecommunication company missed opportunity to attract potential customers, and increase revenue. Strategy could be refining models to make it more accurate, adopting appropriate strategies to focus on this group to capture more of these potential customers.
 
 
 This is AUC ROC Curve of Logistic Regression model
 
 ![auc_roc_curve](auc_roc_curve.png)
+
 
 **3. How can the telecommunication company implement effective business strategies based on findings to maximize the marketing campaign success and overall business growth?**
 
@@ -100,12 +107,15 @@ The company should specifically adopt marketing strategies for each customer seg
 •	Regarding customers who show their interests in subscribing by spending their time on phone calls, it is a great chance to provide in-depth information about offerings, send personalized follow-up messages or emails, tailor message to their specific needs, and collect feedback directly from these customers.
 •	In terms of the most responsive age group to the campaign, the company should implement appropriate strategies to encourage them and retain them as loyal customers.
 
+
+
 ## ** References**
 Abu-Srhan, A., Alhammad, B., Al, S., & Al-Sayyed, R. (2019). Visualization and Analysis in Bank Direct Marketing Prediction. International Journal of Advanced Computer Science & Applications, 10(7). https://doi.org/10.14569/IJACSA.2019.0100785
 
 Hossam, M., Predicting Loan Approval of Bank Direct Marketing Data Using Ensemble Machine Learning Algorithms. International Journal of Circuits, Systems and Signal Processing, vol. 14. https://doi.org/10.46300/9106.2020.14.117
 
 Jiong, C., Yucen, H., Zhao, H., Yicheng, L. & Mengni, S. (2014). Who Will Subscribe A Term Deposit? Colombia University. http://www.columbia.edu/~jc4133/ADA- Project.pdf
+
 Maia (2023, April 28). Customer Segmentation And Prediction For Marketing Campaigns. Medium. https://blog.startupstash.com/customer-segmentation- and-prediction-for-marketing-campaigns-3486f8dc2627
 
 Moro, S., Cortez, P., & Rita, P. (2014). A data-driven approach to predict the success of bank telemarketing. Decision Support Systems, 62, 22-31. https://doi.org/10.1016/j.dss.2014.03.001
@@ -113,6 +123,7 @@ Moro, S., Cortez, P., & Rita, P. (2014). A data-driven approach to predict the s
 Olson, D. L., & Chae, B. (2012). Direct marketing decision support through predictive customer response modelling. Decision Support Systems, 54(1), 443- 451. https://doi.org/10.1016/j.dss.2012.06.005
 
 Olson, D.L., Cao, Q., Gu, C. et al. Comparison of customer response models. Serv Bus 3, 117–130 (2009). https://doi.org/10.1007/s11628-009-0064-8
+
 Raitaluoto, T. (2023, May 11). Segmenting customers based on their loyalty: pros and cons. markettailor. https://www.markettailor.io/blog/segmenting- customers-based-on-their-loyalty-pros-and-cons
 
 
