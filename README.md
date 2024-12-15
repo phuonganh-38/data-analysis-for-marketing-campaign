@@ -109,7 +109,7 @@ The company should specifically adopt marketing strategies for each customer seg
 
 
 
-## ** References**
+## **References**
 Abu-Srhan, A., Alhammad, B., Al, S., & Al-Sayyed, R. (2019). Visualization and Analysis in Bank Direct Marketing Prediction. International Journal of Advanced Computer Science & Applications, 10(7). https://doi.org/10.14569/IJACSA.2019.0100785
 
 Hossam, M., Predicting Loan Approval of Bank Direct Marketing Data Using Ensemble Machine Learning Algorithms. International Journal of Circuits, Systems and Signal Processing, vol. 14. https://doi.org/10.46300/9106.2020.14.117
