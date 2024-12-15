@@ -82,7 +82,8 @@ Customers with **successful previous campaign outcome** and customers with **500
 | **Total Correct Predictions**             |                                                                               | **10466**               | **10427** |
 | **Total Incorrect Predictions**           |                                                                               | **1030**                | **1069**  |
 
-This is ![AUC ROC Curve of Logistic Regression model](auc_roc_curve.png)
+This is AUC ROC Curve of Logistic Regression model
+![auc_roc_curve](auc_roc_curve.png)
 
 5. How can the telecommunication company implement effective business strategies based on findings to maximize the marketing campaign success and overall business growth?
 
