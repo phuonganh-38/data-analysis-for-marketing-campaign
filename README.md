@@ -71,18 +71,16 @@ Customers with **successful previous campaign outcome** and customers with **500
 
 
 
-| **Meaning**                              | **Logistic Regression** | **SVC** |
-|-----------------------------------------|--------------------------|---------|
-| **True Positives**                       | 10144                   | 10157   |
-| Customers correctly predicted as potential customers and subscribed to the term deposit. |                          |         |
-| **True Negatives**                       | 322                     | 270     |
-| Customers correctly predicted as NOT potential customers and did not subscribe to the term deposit. |                          |         |
-| **False Positives**                      | 163                     | 150     |
-| Customers incorrectly predicted as potential subscribers, but they did not subscribe. |                          |         |
-| **False Negatives**                      | 867                     | 919     |
-| Customers incorrectly predicted as NOT potential customers, but they did subscribe. |                          |         |
-| **Total Correct Predictions**            | 10466                   | 10427   |
-| **Total Incorrect Predictions**          | 1030                    | 1069    |
+### Model Prediction Results
+
+|                                 | **Meaning**                                                                 | **Logistic Regression** | **SVC** |
+|-------------------------------------------|-------------------------------------------------------------------------------|--------------------------|---------|
+| **True Positives**                         | Customers correctly predicted as potential customers and subscribed to the term deposit. | 10144                    | 10157   |
+| **True Negatives**                         | Customers correctly predicted as NOT potential customers and did not subscribe to the term deposit. | 322                      | 270     |
+| **False Positives**                        | Customers incorrectly predicted as potential subscribers, but they did not subscribe. | 163                      | 150     |
+| **False Negatives**                        | Customers incorrectly predicted as NOT potential customers, but they did subscribe. | 867                      | 919     |
+| **Total Correct Predictions**             |                                                                               | **10466**               | **10427** |
+| **Total Incorrect Predictions**           |                                                                               | **1030**                | **1069**  |
 
 
 5. How can the telecommunication company implement effective business strategies based on findings to maximize the marketing campaign success and overall business growth?
